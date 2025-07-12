@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Edit Uno BRK';
+    src: url(../fonts/editundo.ttf);
+}
+html {
+    font-size: 1.5rem;
+    font-family: 'Edit Uno BRK', 'monospace';
+}
+body {
+    background: rgb(196, 205, 239);
+}
+header, body {
+    margin: 1.25em;
+}
+
+main {
+    margin: 1em auto;
+}
+
+a {
+    text-decoration: none;
+    color: darkorchid;
+}
+
+a:hover, a:focus {
+    color: darkslateblue;
+}
+
+p, h6 {
+    font-family: monospace;
+    font-weight: 550;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    background-color:cornflowerblue;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+
+nav ul li a {
+    color: lightblue;
+}
+
+#banner {
+    border: 5px white solid;
+    border-radius: 10px;
+    width: 100%;
+}
