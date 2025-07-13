@@ -10,6 +10,7 @@
 html {
     font-size: 1.5rem;
     font-family: 'Edit Uno BRK', 'monospace';
+    scroll-behavior: smooth;
 }
 body {
     background: rgb(196, 205, 239);
