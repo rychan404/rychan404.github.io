@@ -5,7 +5,7 @@
     <meta name="author" content="Ryan Chan" />
     <meta
       name="description"
-      content="The home page for Ryan Chan's personal portfolio."
+      content="The projects page for Ryan Chan's personal portfolio."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Chan</title>
@@ -36,31 +36,56 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <article>
-        <img
-          id="aura"
-          src="./img/ryan-aura.jpg"
-          alt="Ryan Chan standing next to sign that says AURA"
-        />
-        <h1>Hi, I'm Ryan!</h1>
-        <p>
-          Computer Programmer, video editor, & tennis enthusiast with a passion
-          to create something cool!
-        </p>
+    <main id="projects-page">
+        <h1>Videos</h1>
+        <div id="videos">
+          <article>
+            <iframe
+              src="https://www.youtube.com/embed/S8JbWmsxKiY?si=6IfVQqbptd3A2Ffz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <figcaption>
+              <h2>toxic tap</h2>
+              <p>What if the water we drink could slowly poison you tomorrow? An environmental activism video detailing the Flint Water Crisis and takeaways from it.</p>
+            </figcaption>
+          </article>
+          <article>          
+            <iframe
+              src="https://www.youtube.com/embed/C1vBahyJa1k?si=vFYPbLGQJXqCH_Ht"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <figcaption>
+              <h2>Why Civil Conversation Matters More Than Ever</h2>
+              <p>Civil conversation is important! An informative video that dives into what makes civil conversation so great in bringing people together on issues.</p>
+            </figcaption>
+          </article>
+        </div>
       </article>
     </main>
     <footer id="contact">
-      <h5>Contact Me:</h5>
-      <h6>
-        <a href="mailto:minequaftspammed@gmail.com">Email</a>
-      </h6>
-      <h6>
-        <a href="https://github.com/rychan404">GitHub</a>
-      </h6>
-      <h6>
-        <a href="https://linkedin.com/in/ryanchan404">LinkedIn</a>
-      </h6>
+      <a class="footer-icons" href="mailto:ryanchan404+contact@outlook.com"
+        ><img src="./img/envelope.svg" alt="Envelope icon"
+      /></a>
+      <a
+        class="footer-icons"
+        href="https://github.com/rychan404"
+        target="_blank"
+        ><img src="./img/github.svg" alt="GitHub icon"
+      /></a>
+      <a
+        class="footer-icons"
+        href="https://linkedin.com/in/ryanchan404"
+        target="_blank"
+        ><img src="./img/linkedin.svg" alt="LinkedIn icon"
+      /></a>
     </footer>
   </body>
 </html>
