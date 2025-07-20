@@ -19,23 +19,21 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: rgb(196, 205, 239);
+    /* background: rgb(196, 205, 239); */
+    background-image: url(../img/pixel-art-bkg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 100dvh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: minmax(0, 1fr);
 }
-
-#about-page {
+main {
     display: flex;
     justify-content: center;
-    margin: 1rem 7rem 1rem 0;
-}
-
-#about-page article {
-    display: grid;
-    grid-template-columns: minmax(0, 25dvw) minmax(0, 1fr);
-    grid-template-rows: minmax(0, 2.75rem) minmax(0, 1fr);
+    align-items: center;
+    margin: 1rem;
 }
 
 footer {
@@ -45,20 +43,43 @@ footer {
     background: hsl(233, 62%, 80%);
     padding: 0.5rem;
 }
-#about-page article h1 {
-    display: flex;
-    align-items: flex-end;
-    margin-left: 0.75rem;
-    font-size: clamp(1rem, 10vw, 2rem);
-    white-space: nowrap;
+
+article {
+    background-color: rgb(196, 205, 239);
+    padding: 1.5rem;  
+}
+
+#about-page article img {
+    float: left;
+    max-width: 10rem;
+    margin: 0 0.75rem 0.75rem 0;
 }
 
 #about-page article p {
-    margin-top: 0.5rem;
-    margin-left: 0.75rem;
-    font-size: clamp(0.5rem, 4.5vw, 1rem);
-    width: 30ch;
+    max-width: 50ch;
 }
+
+#home-page article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home-page article img {
+    max-width: 12.5rem;
+    border-radius: 50%;
+}
+
+#home-page article h1 {
+    text-align: center;
+}
+
+#home-page article p {
+    max-width: 35ch;
+    text-align: center;
+}
+
 h4 {
     font-size: clamp(0.5rem, 10vw, 1rem);
     margin-inline: 0.5rem;
@@ -92,25 +113,12 @@ nav ul {
     padding: 0.5rem;
     background-color:cornflowerblue;
 }
-/*
-nav ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 1rem;
-    background-color:cornflowerblue;
-}
-*/
+
 nav ul li {
     margin-inline: clamp(0.5rem, 5vw, 1rem);
     font-size: clamp(0.5rem, 4.5vw, 1rem);
 }
-/*
-nav ul li {
-    display: inline-block;
-    margin-inline: 0.5rem;
-    font-size: min(4.5vw, 1rem);
-}
-*/
+
 nav ul li a {
     color: lightblue;
 }
@@ -120,18 +128,7 @@ nav ul li a {
     margin: auto;
     width: 100%;
 }
-/*
-#aura {
-    width: min(30%, 20rem);
-}
-*/
-#about-page article img {
-    justify-self: flex-end;
-    width: clamp(2rem, 25rem, 100%);
-    max-width: 100%;
-    overflow: hidden;
-    grid-row: auto / span 2;
-}
+
 footer img {
     border: 3px hsl(233, 62%, 80%) solid;
 }
@@ -141,27 +138,39 @@ footer img:hover, footer img:focus {
     border-radius: 5px;
 }
 
-#home-page {
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-}
-#home-page article {
-    display: flex;
+#projects-page {
     flex-direction: column;
-    justify-self: center;
     align-items: center;
 }
-#home-page article img {
-    width: clamp(2rem, 15rem, 100%);
-    border-radius: 50%;
+
+#projects-page h1 {
+    background-color: rgb(196, 205, 239);
+    padding: 0.5rem 4.15rem;
 }
 
-#home-page article p {
-    width: 35ch;
+#projects-page article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+#projects-page article iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+#projects-page article h2 {
+    max-width: 30ch;
     text-align: center;
+    margin: 1rem 0 0.25rem 0;
 }
 
+#projects-page article p {
+    max-width: 45ch;
+}
+
+/*
 #projects-page h1 {
     text-align: center;
     margin: 1rem auto;
@@ -198,3 +207,4 @@ iframe {
     font-size: clamp(0.5rem, 4.5vw, 1rem);
     max-width: 40ch;
 }
+*/
