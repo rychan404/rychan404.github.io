@@ -197,6 +197,16 @@ footer img:hover, footer img:focus {
     max-width: 45ch;
 }
 
+#experience-page article p {
+    font-family: 'Edit Uno BRK', monospace;
+    margin-bottom: 0.25rem;
+}
+
+#experience-page ul li {
+    font-size: 0.75rem; 
+    font-family: 'Baskic8', monospace;
+}
+
 /*
 #projects-page h1 {
     text-align: center;
