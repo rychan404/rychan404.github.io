@@ -29,6 +29,7 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: minmax(0, 1fr);
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -53,6 +54,11 @@ article {
     float: left;
     max-width: 10rem;
     margin: 0 0.75rem 0.75rem 0;
+    transition: transform 1s ease;
+}
+
+#about-page article img:hover {
+    transform: scale(1.1);
 }
 
 #about-page article p {
@@ -67,8 +73,13 @@ article {
 }
 
 #home-page article img {
-    max-width: 12.5rem;
     border-radius: 50%;
+    width: 12.5rem;
+    transition: transform 0.5s ease;
+}
+
+#home-page article img:hover {
+    transform: rotate(180deg);
 }
 
 #home-page article h1 {
@@ -87,6 +98,8 @@ h4 {
 a {
     text-decoration: none;
     color: darkorchid;
+    transition: transform 0.2s ease;
+    display: inline-block;
 }
 
 .footer-icons {
@@ -95,10 +108,19 @@ a {
     align-items: center;
     width: clamp(0.5rem, 40vw, 1.75rem);
     margin-inline: calc(0.5rem - 3px);
+    transition: transform 0.2s ease;
+}
+
+.footer-icons:hover {
+    transform: scale(1.1);
 }
 
 a:hover, a:focus {
     color: darkslateblue;
+}
+
+a:hover {
+    transform: scale(1.1);
 }
 
 p, h2 {
@@ -158,6 +180,11 @@ footer img:hover, footer img:focus {
 #projects-page article iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
+    transition: transform 0.3s ease;
+}
+
+#projects-page article iframe:hover {
+    transform: scale(1.05);
 }
 
 #projects-page article h2 {
